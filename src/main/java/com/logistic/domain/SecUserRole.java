@@ -28,7 +28,7 @@ public class SecUserRole implements Serializable {
     private Long idUserRole;
 
     @Basic
-    @Column(name = "st_cre_user", nullable = true, length = 150)
+    @Column(name = "st_cre_user", length = 150)
     private String stCreUser;
     @Basic
     @Column(name = "dt_create", nullable = false)

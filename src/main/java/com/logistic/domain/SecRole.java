@@ -41,10 +41,10 @@ public class SecRole implements Serializable {
     @Column(name = "dt_create", nullable = false)
     private Date dtCreate;
     @Basic
-    @Column(name = "st_mod_user", nullable = true, length = 150)
+    @Column(name = "st_mod_user", length = 150)
     private String stModUser;
     @Basic
-    @Column(name = "dt_modify", nullable = true)
+    @Column(name = "dt_modify")
     private Date dtModify;
 
 

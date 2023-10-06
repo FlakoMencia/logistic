@@ -34,7 +34,7 @@ public class SecUser implements Serializable {
     @Column(name = "st_password", nullable = false, length = 100)
     private String stPassword;
     @Basic
-    @Column(name = "st_cre_user", nullable = true, length = 150)
+    @Column(name = "st_cre_user", length = 150)
     private String stCreUser;
     @Basic
     @Column(name = "dt_create", nullable = false)
@@ -43,13 +43,13 @@ public class SecUser implements Serializable {
     @Column(name = "is_active", nullable = false)
     private Boolean isActive;
     @Basic
-    @Column(name = "st_mod_user", nullable = true, length = 150)
+    @Column(name = "st_mod_user", length = 150)
     private String stModUser;
     @Basic
-    @Column(name = "dt_modify", nullable = true)
+    @Column(name = "dt_modify")
     private Date dtModify;
     @Basic
-    @Column(name = "st_email", nullable = true, length = -1)
+    @Column(name = "st_email", length = -1)
     private String stEmail;
 
     @OneToMany(mappedBy = "secUserByFkUser", fetch = FetchType.EAGER)

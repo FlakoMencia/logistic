@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/ingeneo")
 public class MainController {
 
-    private SecUserService secUserService;
+    private final SecUserService secUserService;
     public MainController(SecUserService secUserService){
         this.secUserService = secUserService;
     }
