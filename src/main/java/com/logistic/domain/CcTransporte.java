@@ -40,7 +40,7 @@ public class CcTransporte {
     private String matricula;
     @Basic
     @Column(name = "fabricante")
-    private Integer fabricante;
+    private String fabricante;
     @Basic
     @Column(name = "anio")
     private Integer anio;
